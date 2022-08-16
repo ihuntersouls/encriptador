@@ -36,3 +36,12 @@ copyTextareaBtn.addEventListener('click', function(event) {
     console.log('Oops, unable to copy');
   }
 });
+
+/* Desaparecer muñeco del rectangulo */
+function demoDisplay() {
+    document.getElementById("muñeco").style.display = "none";
+    document.getElementById("noEncontrado").style.display = "none";
+    document.getElementById("textoEncriptar").style.display = "none";
+    document.getElementById("botonCopiar").style.zIndex = "100";
+    document.getElementById("textoEncriptado").style.display = "block"
+  }

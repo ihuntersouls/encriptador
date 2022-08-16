@@ -7,13 +7,24 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="botones-Advertencia.css">
     <link rel="stylesheet" href="rectangulo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <title>Encriptador</title>
 </head>
 <body>
-    <!-- Parte superior derecha de la pagina (logotipo de Alura) -->
+    <!-- Parte superior derecha de la pagina (logotipo de Alura) 
     <header>
-        <img id="logo" src="challengeEncriptador/Logo@2x.png">
-    </header>
+        <span class="logo">
+            <span id="autor">autor</span>
+            Neider Fabian Zamora Moreno</span>
+    </header>-->
+
+    <section class="pantalla2">
+        <!--Boton de copiar texto encriptado o desencriptado-->
+        <button id="botonCopiar">
+            <span id="botonCopiarTexto">Copiar</span>
+        </button>
+        <textarea name="" id="textoEncriptado" cols="30" rows="10"></textarea>   
+    </section>
 
     <!-- Textos representativos para el uso del encriptador-->
     <section class="mensajesRectangulo">
@@ -40,20 +51,12 @@
 
     <!-- Botones de "Encriptar" y "Desencriptar"-->
     <section class="botones"> 
-        <button id="encriptarBoton">
-            <span id="encriptarTexto">Encriptar!</span>
+        <button id="encriptarBoton" >
+            <span id="encriptarTexto" onclick="demoDisplay()">Encriptar!</span>
         </button>
         <button id="desencriptarBoton">
-            <span id="textoDesencriptar">Desencriptar!</span>
+            <span id="textoDesencriptar" onclick="demoDisplay()">Desencriptar!</span>
         </button>
-    </section>
-
-    <section class="pantalla2">
-        <!--Boton de copiar texto encriptado o desencriptado-->
-        <button id="botonCopiar">
-            <span id="botonCopiarTexto">Copiar</span>
-        </button>
-        <textarea name="" id="textoEncriptado" cols="30" rows="10"></textarea>   
     </section>
     
     <!--Conexion a archivo js-->

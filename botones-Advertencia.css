@@ -41,7 +41,7 @@
 #encriptarTexto{
     width: 280px;
     height: 19px;    
-    font-family: 'Inter';
+    font-family: 'Amatic SC', cursive;
     font-style: normal;
     font-weight: 700;
     font-size: 1.5rem;
@@ -72,7 +72,7 @@
 #textoDesencriptar{
     width: 280px;
     height: 19px;
-    font-family: 'Inter';
+    font-family: 'Amatic SC', cursive;
     font-style: normal;
     font-weight: 700;
     font-size: 1.5rem;

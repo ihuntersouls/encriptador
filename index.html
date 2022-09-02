@@ -7,49 +7,24 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="botones-Advertencia.css">
     <link rel="stylesheet" href="rectangulo.css">
+    <link rel="stylesheet" href="media-query.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <title>Encriptador</title>
 </head>
 <body>
-    <!-- Parte superior derecha de la pagina (logotipo de Alura) 
-    <header>
-        <span class="logo">
-            <span id="autor">autor</span>
-            Neider Fabian Zamora Moreno</span>
-    </header>-->
-
-    <section class="pantalla2">
-        <!--Boton de copiar texto encriptado o desencriptado-->
-        <button id="botonCopiar">
-            <span id="botonCopiarTexto">Copiar</span>
-        </button>
-        <textarea name="" id="textoEncriptado" cols="30" rows="10"></textarea>   
+        <!-- Texto a codificar -->
+     <section>
+        <textarea name="" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
     </section>
 
-    <!-- Textos representativos para el uso del encriptador-->
-    <section class="mensajesRectangulo">
-        <span id="noEncontrado">Ningun mensaje fue encontrado.</span>
-        <span id="textoEncriptar">Ingresa el texto que desees encriptar o desencriptar.</span>
-    </section>
-
-    <!-- Imagen del "muñeco en la parte del rectagulo vertical derecho"-->
-    <img id="muñeco" src="challengeEncriptador/Muñeco.png" alt="">
-
-    <!-- Texto de advertencia sobre uso del texto a encriptar-->
+        <!-- Texto de advertencia sobre uso del texto a encriptar-->
     <section class="advertencia">
         <img id="iconoAdvertencia" src="challengeEncriptador/Vector.png" alt="">
         <span id="mensajeAdvertencia"> 
             Solo letras minusculas y sin acentos</span>
     </section>
 
-    <!-- Texto a codificar -->
-    <section>
-        <textarea name="" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-    </section>
-    <!-- Rectangulo blanco ubicado en la parte derecha-->
-    <div id="rectangulo"></div>
-
-    <!-- Botones de "Encriptar" y "Desencriptar"-->
+        <!-- Botones de "Encriptar" y "Desencriptar"-->
     <section class="botones"> 
         <button id="encriptarBoton" >
             <span id="encriptarTexto" onclick="demoDisplay()">Encriptar!</span>
@@ -58,7 +33,26 @@
             <span id="textoDesencriptar" onclick="demoDisplay()">Desencriptar!</span>
         </button>
     </section>
-    
+   
+    <!-- Rectangulo blanco ubicado en la parte derecha-->
+    <div id="rectangulo">
+            <!-- Imagen del "muñeco en la parte del rectagulo vertical derecho"-->
+        <img id="muñeco" src="challengeEncriptador/Muñeco.png" alt="">
+
+            <!-- Textos representativos para el uso del encriptador-->
+        <section class="mensajesRectangulo">
+            <span id="noEncontrado">Ningun mensaje fue encontrado.</span>
+            <span id="textoEncriptar">Ingresa el texto que desees encriptar o desencriptar.</span>
+        </section>
+
+        <section class="pantalla2">
+            <!--Boton de copiar texto encriptado o desencriptado-->
+            <button id="botonCopiar">
+                <span id="botonCopiarTexto">Copiar</span>
+            </button>
+            <textarea name="" id="textoEncriptado" cols="30" rows="10"></textarea>   
+        </section>
+    </div>
     <!--Conexion a archivo js-->
     <script src="main.js"></script>
 </body>

@@ -1,0 +1,213 @@
+/* Vista Tablet */
+@media screen and (max-width:768px){
+    .advertencia{
+
+        width: 229px;
+        height: 18px;
+        left: 40px;
+        top: 836px;
+    }
+    #texto{
+        width: 688px;
+        height: 348px;
+        left: 40px;
+        top: 240px;
+    }
+    .botones{
+        position: absolute;
+        width: 688px;
+        height: 67px;
+        left: 40px;
+        top: 870px;
+    }
+    #encriptarBoton{
+        width: 332px;
+        height: 67px;
+    }
+    #desencriptarBoton{
+        
+        box-sizing: border-box;
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+
+        width: 332px;
+        height: 67px;
+
+        /* Dark blue/dark-blue-300 */
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+    }
+    #rectangulo{
+        width: 688px;
+        height: 133px;
+        left: 40px;
+        top: 1001px;
+        z-index: -10;
+    }
+    #muñeco{
+        display: none;
+    }
+    .mensajesRectangulo{
+        width: 688px;
+        height: 133px;
+        left: 20px;
+        top: 30px;
+    }
+    #textoEncriptar{
+        
+        width: 624px;
+        height: 24px;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+
+        /* identical to box height, or 24px */
+        text-align: center;
+
+        /* Gray/gray-400 */
+        color: #495057;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    #noEncontrado{
+        width: 624px;
+        height: 29px;
+        
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        
+        /* identical to box height, or 29px */
+        text-align: center;
+        
+        /* Gray/gray-500 */
+        color: #343A40;
+        
+        
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .pantalla2{
+        z-index: 1;
+        width: 688px;
+        height: 133px;
+        position: relative;
+
+        padding: 22px;
+    }
+    #textoEncriptado{
+        width: 624px;
+        height: 120px;
+        top: 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+
+        color: #495057;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    #botonCopiar{
+        width: 626px;
+        height: 67px;
+        left: 30px;
+        top: 155px;
+    }
+    #botonCopiarTexto{
+        width: 343px;
+        height: 37px;
+    }
+}
+
+/* Vista Mobiles */
+@media screen and (max-width: 375px){
+    #texto{
+        width: 343px;
+        height: 248px;
+        left: 16px;
+        top: 152px;
+    }
+    .advertencia{
+        width: 229px;
+        height: 18px;
+        left: 16px;
+        top: 451px;
+    }
+    .botones{
+        width: 343px;
+        height: 158px;
+        left: 16px;
+        top: 485px;
+
+        flex-direction: column;
+    }
+    #encriptarBoton{
+        width: 343px;
+        height: 67px;
+    }
+    #desencriptarBoton{
+        width: 343px;
+        height: 67px;
+    }
+    #rectangulo{
+        width: 327px;
+        height: 186px;
+        top: 707px;
+        left: 24px;
+    }
+    .mensajesRectangulo{
+        width: 263px;
+        height: 122px;
+        top: 32px;
+        left: 32px;
+    }
+    #noEncontrado{
+        width: 263px;
+        height: 58px;
+    }
+    #textoEncriptar{
+        width: 263px;
+        height: 48px;
+    }
+    #botonCopiar{
+        width: 343px;
+        height: 67px;
+        top: 200px;
+        left: -9px;
+    }
+    #botonCopiarTexto{
+        width: 231px;
+        height: 19px;
+    }
+    #textoEncriptado{
+        width: 262px;
+        height: 175px;
+        top: 2px;
+        left: 32px;
+    }
+}
